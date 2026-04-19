@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Dashbaord</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+
+    <link href="styles/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="scripts/render_products.js"></script>
+    <script src="scripts/manage_orders.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse p-0 m-0">
+                <div class="d-flex flex-column justify-content-start h-100 position-sticky align-items-center">
+                    <div class="log">
+                        <img class="logo" src="images/logo.png" />
+                    </div>
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="fa-solid fa-border-all"></i>
+                                Dashbaord
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">
+                                <i class="fa-solid fa-user-circle"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="messages.html">
+                                <i class="fa-solid fa-envelope"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="timeTable.html">
+                                <i class="fa-solid fa-clock"></i>
+                                Time Table
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 col-lg-10 bg-light ms-auto">
+                <div class="container d-flex flex-column justify-content-center py-3 px-5">
+                    <div class="border-bottom border-2 d-flex justify-content-end">
+                        <div class="profile d-flex">
+                            <div class="notification p-2">
+                                <i class="far fa-bell"></i>
+                            </div>
+                            <img class="profile-picture p-2" src="images/profile.png" alt="Profile picture" />
+                            <div class="d-flex flex-column p-2">
+                                <p class="m-0 text-end username">Bilal Shalabi</p>
+                                <p class="m-0 text-end role">Student</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-down pt-3 px-2"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h3>Dashboard</h3>
+                        <div class="date">Sunday, March 23, 2026</div>
+                    </div>
+                </div>
+
+                <div class="d-flex ">
+                    <div id="course" class="album section p-5">
+                        <div class="h4 py-2">Course Teacher</div>
+                        <div class="container teacher-card my-2 p-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column px-1">
+                                    <div class="card-head">CS 162</div>
+                                    <div class="card-main">Ahmad Ali</div>
+                                    <div class="card-foot">SF 12</div>
+                                </div>
+                                <div class="p-4 card-main text-end">12:30 PM</div>
+                            </div>
+                        </div>
+
+                        <div class="h4 py-2">Meeting</div>
+                        <div class="container meeting-card my-2 p-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column px-1">
+                                    <div class="card-head">Speaking</div>
+                                    <div class="card-main">Join Meeting</div>
+                                    <div class="card-foot">A1</div>
+                                </div>
+                                <div class="p-4 card-main text-end"><a class="card-link" href="">JOIN</a></div>
+                            </div>
+                        </div>
+
+                        <div class="h4 py-2">Course Material</div>
+                        <div class="container material-card p-2 my-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="px-1 card-main">Introduction to this course</div>
+                                <div class="px-1 card-main"><a class="card-link" href="">Download</a></div>
+                            </div>
+                        </div>
+                        <div class="container material-card p-2 my-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="px-1 card-main">Chapter 1</div>
+                                <div class="px-1 card-main"><a class="card-link" href="">Download</a></div>
+                            </div>
+                        </div>
+                        <div class="container material-card p-2 my-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="px-1 card-main">Chapter 2</div>
+                                <div class="px-1 card-main"><a class="card-link" href="">Download</a></div>
+                            </div>
+                        </div>
+
+                        <div class="h4 py-2">Worksheets</div>
+                        <div class="container material-card p-2 my-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="px-1 card-main">Worksheet 1</div>
+                                <div class="px-1 card-main"><a class="card-link" href="">Download</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="classesbar" class="sidebar py-2">
+                        <div class="container album">
+                            <div class="h4 py-2 border-bottom border-2">Classes</div>
+                            <div class="container class-card my-2 p-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column px-1">
+                                        <div class="card-head">Speaking</div>
+                                        <div class="card-main">Class 1</div>
+                                        <div class="card-foot">A1</div>
+                                    </div>
+                                    <div class="py-2 card-main d-flex-column text-end">
+                                        <div class="card-main">Sun 01:30 PM</div>
+                                        <div class="card-date">14-May-2026</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container class-card my-2 p-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column px-1">
+                                        <div class="card-head">Grammer</div>
+                                        <div class="card-main">Class 2</div>
+                                        <div class="card-foot">A1</div>
+                                    </div>
+                                    <div class="py-2 card-main d-flex-column text-end">
+                                        <div class="card-main">Tue 12:30 PM</div>
+                                        <div class="card-date">16-May-2026</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container class-card my-2 p-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column px-1">
+                                        <div class="card-head">Writing</div>
+                                        <div class="card-main">Class 3</div>
+                                        <div class="card-foot">A1</div>
+                                    </div>
+                                    <div class="py-2 card-main d-flex-column text-end">
+                                        <div class="card-main">Thu 11:00 PM</div>
+                                        <div class="card-date">18-May-2026</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script type="module">
+        /*
+                let products = [];
+        
+                function loadProducts() {
+                    return $.ajax({
+                        url: "http://localhost/GP/php/get_products.php",
+                        method: "GET",
+                        dataType: "json"
+                    }).done(function (data) {
+                        products = data;
+                        console.log("Products loaded:", products);
+                    }).fail(function (err) {
+                        console.error("Error loading products:", err);
+                    });
+                }
+        
+        
+                render_products('all');
+                loadProducts().done(function () {
+        
+                    let current_order = [];
+                    var subtotal = 0;
+                    var tax = 0.05;
+                    let total = 0;
+        
+                    calculate(subtotal);
+                    $('.tax').html('Tax %' + (tax * 100));
+        
+                    $('.filter-Button').on('click', function () {
+        
+                        $('.filter-Button').removeClass('active');
+        
+                        $(this).addClass('active');
+                        var category = $(this).val();
+                        render_products(category);
+                    });
+        
+                    $(document).on('click', '.btn-pay', function () {
+                        $('.btn-pay').removeClass('active');
+        
+                        $(this).addClass('active');
+                    });
+        
+        
+                    $(document).on('click', '.add-Button', function () {
+        
+                        var id = $(this).val();
+        
+                        let product = products.find(p => p.ProductID == id);
+        
+                        if (!product) return;
+        
+                        // check if product already exists in current_order
+                        let existing = current_order.find(o => o.id == id);
+        
+                        if (existing) {
+                            existing.qty += 1; // increment quantity
+                            $('#quantity' + id).html(existing.qty);
+                        } else {
+                            current_order.push({
+                                id: product.ProductID,
+                                name: product.Product,
+                                price: parseFloat(product.Price),
+                                qty: 1
+                            });
+        
+                            $('.orders').append(
+                                '<li class="order d-flex mb-2 bg-light">' +
+                                '<img class="order-image" src="images/products/' + id + '.jpg" alt="' + product.Product + '" />' +
+                                '<div class="d-flex-column px-4">' +
+                                '<div class="d-flex justify-content-between align-items-center">' +
+                                '<p class="fw-bold">' + product.Product + '</p>' +
+                                '<button type="button" class="btn order-Button remove m-2 p-0" value="' + id + '">' +
+                                '<i class="fa-solid fa-remove"></i>' +
+                                '</button>' +
+                                '</div>' +
+                                '<div class="d-flex justify-content-between align-items-center">' +
+                                '<small class="priceTag">$' + product.Price + '</small>' +
+                                '<div class="btn-group">' +
+                                '<button type="button" class="btn order-Button minus m-2 p-0" value="' + id + '">' +
+                                '<i class="fa-solid fa-minus"></i>' +
+                                '</button>' +
+                                '<h1 id="quantity' + id + '" class="h2 p-1">1</h1>' +
+                                '<button type="button" class="btn order-Button add m-2 p-0" value="' + id + '">' +
+                                '<i class="fa-solid fa-add"></i>' +
+                                '</button>' +
+                                '</div>' +
+                                '</div>' +
+                                '</div>' +
+                                '</li>');
+                        }
+        
+        
+        
+                        calculate(product.Price);
+        
+                    });
+        
+                    $(document).on('click', '.order-Button', function () {
+        
+                        var id = $(this).val();
+        
+                        let product = products.find(p => p.ProductID == id);
+        
+                        if (!product) return;
+        
+                        let item = current_order.find(o => o.id == id);
+        
+                        if ($(this).hasClass('add')) {
+                            item.qty += 1;
+                            calculate(item.price);
+                            $('#quantity' + id).html(item.qty);
+                        } else if ($(this).hasClass('minus')) {
+                            item.qty -= 1;
+                            calculate(-parseFloat(item.price));
+                            if (item.qty <= 0) {
+                                current_order = current_order.filter(o => o.id != id); // remove if qty is 0 
+                                $(this).closest('li.order').remove();
+                            } else {
+                                $('#quantity' + id).html(item.qty);
+                            }
+                        } else {
+        
+                            calculate(-parseFloat((item.qty * item.price)));
+        
+                            current_order = current_order.filter(o => o.id != id); // remove if qty is 0 
+                            $(this).closest('li.order').remove();
+        
+                        }
+        
+                    });
+        
+                    $(document).on('click', '.charge-Button', function () {
+        
+                        Swal.fire({
+                            title: 'Verify Payment?',
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#F67F20',
+                            cancelButtonColor: '#000000',
+                            confirmButtonText: 'Yes'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                let payment_method = "cash";
+        
+                                if ($('.card').hasClass('active')) {
+                                    payment_method = "card";
+                                }
+        
+                                save_order(current_order, total, payment_method, 1);
+                                $(this).hide();
+                                $('.save-Button').hide();
+                            } else { alert("Payment cancelled"); }
+                        });
+        
+                    });
+        
+                    $(document).on('click', '.save-Button', function () {
+        
+                        Swal.fire({
+                            title: 'Save unpaid order?',
+                            icon: 'question',
+                            showCancelButton: true,
+                            confirmButtonColor: '#F67F20',
+                            cancelButtonColor: '#000000',
+                            confirmButtonText: 'Save',
+                            cancelButtonText: 'Cancel'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                save_order(current_order, total, 'none', 0);
+                                location.reload();
+                            }
+                            else { alert("Order not Saved"); }
+                        });
+                    });
+        
+        
+                    function calculate(price) {
+                        subtotal += parseFloat(price);
+        
+                        if (Math.abs(subtotal) < 0.01) {
+                            subtotal = 0;
+                        }
+                        let taxvalue = subtotal * tax;
+                        total = subtotal + taxvalue;
+        
+                        $('.subtotal').html('$' + subtotal.toFixed(2));
+                        $('.tax').html('Tax ' + (tax * 100) + '%');
+                        $('.taxvalue').html('$' + taxvalue.toFixed(2));
+                        $('.total').html('$' + total.toFixed(2));
+                        if (Math.abs(total) < 0.01) {
+                            $('.charge-Button').hide();
+                            $('.save-Button').hide();
+                        } else {
+                            $('.charge-Button').show();
+                            $('.save-Button').show();
+                            $('.charge-Button').html('Charge $' + total.toFixed(2));
+                        }
+                    }
+        
+                });
+        
+        
+                $(document).on('input', '.search', function () {
+                    const query = $(this).val().toLowerCase();
+                    if (query.trim() != "") {
+                        const filtered = products.filter(p =>
+                            (p.Product && p.Product.toLowerCase().includes(query.toLowerCase()))
+                            // || (p.Category && p.Category.toLowerCase().includes(query.toLowerCase()))
+                        );
+        
+        
+                        searchProducts(filtered);
+                    } else {
+                        searchProducts(products);
+                    }
+                });
+        
+                function searchProducts(filtered) {
+        
+                    let html = '<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">';
+        
+                    filtered.forEach(product => {
+        
+                        html +=
+                            '<div class="col">' +
+                            '<div class="card h-100 shadow-sm">' +
+                            '<img class="food-image" src="images/products/' + product.ProductID + '.jpg" alt="' + product.Product + '" />' +
+                            '<div class="card-body">' +
+                            '<p class="fw-bold">' + product.Product + '</p>' +
+                            '<div class="d-flex justify-content-between align-items-center">' +
+                            '<div class="btn-group">' +
+                            '<button type="button" class="btn add-Button" value="' + product.ProductID + '">Add</button>' +
+                            '</div>' +
+                            '<small class="priceTag">$' + product.Price + '</small>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>';
+        
+                    });
+                    html += '</div>';
+                    $('.products-cards').html(html);
+                }
+        */
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

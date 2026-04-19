@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
+    sans-serif;
+  display: flex;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background: #F67F20;
+  background: linear-gradient(
+    90deg,
+    rgba(220, 145, 99, 1) 0%,
+    rgba(246, 127, 32, 1)100%
+  );
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 25rem;
+  padding: 3rem;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type='email'],
+.form-signin input[type='password'],
+.form-signin input[type='text'] {
+  margin-bottom: 1rem;
+  border: 2px solid #fec007;
+  border-radius: 1rem;
+}
+
+.form-signin .btn {
+  border-radius: 1rem;
+  color: white;
+  background: #F67F20;
+  background: linear-gradient(
+    90deg,
+    rgba(220, 145, 99, 1) 0%,
+    rgba(246, 127, 32, 1)100%
+  );
+}
+
+.form-signin .btn:hover {
+  color: #fec007;
+  border: 1px solid #fec007;
+}
+
+.form-signin a {
+  color: rgba(253, 29, 29, 1);
+}
