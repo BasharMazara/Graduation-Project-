@@ -197,9 +197,6 @@ div.log {
   font-weight: bold;
 }
 
-.album .card-foot {
-}
-
 .sidebar-sticky {
   position: relative;
   top: 0;
@@ -689,12 +686,13 @@ p.role {
 
 
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
 
-  #classesbar{
+  #classesbar {
     margin: 0;
     padding: 0;
   }
+
   #course {
     margin: 0;
     padding: 0;

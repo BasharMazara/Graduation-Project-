@@ -4,18 +4,13 @@ body {
 }
 
 body {
-  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: flex;
   align-items: center;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  background: #F67F20;
-  background: linear-gradient(
-    90deg,
-    rgba(220, 145, 99, 1) 0%,
-    rgba(246, 127, 32, 1)100%
-  );
+  justify-content: center;
+  padding: 2.5rem;
+  background: #f3f4f9;
+  /* matches sidebar background */
 }
 
 .form-signin {
@@ -23,10 +18,23 @@ body {
   max-width: 25rem;
   padding: 3rem;
   margin: auto;
+  background-color: #fbfcfe;
+  border: 2px solid #dadedf;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  height: 10%;
+  width: 100%;
+  padding: 10%;
+  background-color: #0e2c75;
+  border-radius: 1.5rem;
 }
 
 .form-signin .checkbox {
   font-weight: 400;
+  color: #7b8a98;
 }
 
 .form-signin .form-floating:focus-within {
@@ -37,26 +45,39 @@ body {
 .form-signin input[type='password'],
 .form-signin input[type='text'] {
   margin-bottom: 1rem;
-  border: 2px solid #fec007;
+  border: 2px solid #0e2c75;
   border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: clamp(14px, 1.2vw, 20px);
+}
+
+.form-signin input:focus {
+  outline: none;
+  border-color: #5668a1;
+  box-shadow: 0 0 5px rgba(14, 44, 117, 0.3);
 }
 
 .form-signin .btn {
   border-radius: 1rem;
-  color: white;
-  background: #F67F20;
-  background: linear-gradient(
-    90deg,
-    rgba(220, 145, 99, 1) 0%,
-    rgba(246, 127, 32, 1)100%
-  );
+  font-weight: bolder;
+  color: #ffffff;
+  background-color: #0e2c75;
+  font-size: clamp(14px, 1.2vw, 20px);
+  height: 3.3rem;
 }
 
 .form-signin .btn:hover {
-  color: #fec007;
-  border: 1px solid #fec007;
+  background-color: #5668a1;
+  color: #ffffff;
 }
 
 .form-signin a {
-  color: rgba(253, 29, 29, 1);
+  color: #df7d72;
+  /* matches class date color */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.form-signin a:hover {
+  color: #0e2c75;
 }
